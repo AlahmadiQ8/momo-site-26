@@ -1,0 +1,10 @@
+skills-lock.json
+.claude
+*.test
+imports.*
+dist/
+public/
+.DS_Store 
+cache/filecache/_gen/
+node_modules
+.playwright*

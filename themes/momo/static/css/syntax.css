@@ -1,0 +1,217 @@
+/* ==========================================================================
+   Momo Theme — Syntax Highlighting (Chroma CSS Classes)
+   Dual-theme support: light & dark
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Base highlight container
+   -------------------------------------------------------------------------- */
+
+.highlight {
+  position: relative;
+}
+
+.highlight pre {
+  overflow-x: auto;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  line-height: 1.5;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.highlight pre code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Line numbers */
+.highlight .ln {
+  margin-right: 0.75rem;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* --------------------------------------------------------------------------
+   Light Theme Syntax Highlighting
+   -------------------------------------------------------------------------- */
+
+[data-theme="light"] .highlight pre { background: #f8f9fa; color: #1a1a2e; }
+
+/* Comments */
+[data-theme="light"] .highlight .c   { color: #868e96; font-style: italic; } /* Comment */
+[data-theme="light"] .highlight .cm  { color: #868e96; font-style: italic; } /* Comment.Multiline */
+[data-theme="light"] .highlight .c1  { color: #868e96; font-style: italic; } /* Comment.Single */
+[data-theme="light"] .highlight .cs  { color: #868e96; font-style: italic; } /* Comment.Special */
+[data-theme="light"] .highlight .cp  { color: #868e96; font-style: italic; } /* Comment.Preproc */
+[data-theme="light"] .highlight .cpf { color: #868e96; font-style: italic; } /* Comment.PreprocFile */
+[data-theme="light"] .highlight .ch  { color: #868e96; font-style: italic; } /* Comment.Hashbang */
+
+/* Keywords */
+[data-theme="light"] .highlight .k   { color: #a626a4; font-weight: bold; } /* Keyword */
+[data-theme="light"] .highlight .kd  { color: #a626a4; font-weight: bold; } /* Keyword.Declaration */
+[data-theme="light"] .highlight .kr  { color: #a626a4; font-weight: bold; } /* Keyword.Reserved */
+[data-theme="light"] .highlight .kc  { color: #a626a4; font-weight: bold; } /* Keyword.Constant */
+[data-theme="light"] .highlight .kn  { color: #a626a4; }                    /* Keyword.Namespace */
+[data-theme="light"] .highlight .kt  { color: #c18401; }                    /* Keyword.Type */
+[data-theme="light"] .highlight .kp  { color: #a626a4; }                    /* Keyword.Pseudo */
+
+/* Strings */
+[data-theme="light"] .highlight .s   { color: #50a14f; } /* String */
+[data-theme="light"] .highlight .s1  { color: #50a14f; } /* String.Single */
+[data-theme="light"] .highlight .s2  { color: #50a14f; } /* String.Double */
+[data-theme="light"] .highlight .se  { color: #50a14f; } /* String.Escape */
+[data-theme="light"] .highlight .si  { color: #50a14f; } /* String.Interpol */
+[data-theme="light"] .highlight .sa  { color: #50a14f; } /* String.Affix */
+[data-theme="light"] .highlight .sb  { color: #50a14f; } /* String.Backtick */
+[data-theme="light"] .highlight .sc  { color: #50a14f; } /* String.Char */
+[data-theme="light"] .highlight .sd  { color: #50a14f; } /* String.Doc */
+[data-theme="light"] .highlight .sh  { color: #50a14f; } /* String.Heredoc */
+[data-theme="light"] .highlight .sr  { color: #50a14f; } /* String.Regex */
+[data-theme="light"] .highlight .ss  { color: #50a14f; } /* String.Symbol */
+[data-theme="light"] .highlight .sx  { color: #50a14f; } /* String.Other */
+[data-theme="light"] .highlight .dl  { color: #50a14f; } /* String.Delimiter */
+
+/* Names */
+[data-theme="light"] .highlight .n   { color: #1a1a2e; } /* Name */
+[data-theme="light"] .highlight .nf  { color: #4078f2; } /* Name.Function */
+[data-theme="light"] .highlight .fm  { color: #4078f2; } /* Name.Function.Magic */
+[data-theme="light"] .highlight .na  { color: #986801; } /* Name.Attribute */
+[data-theme="light"] .highlight .nb  { color: #e45649; } /* Name.Builtin */
+[data-theme="light"] .highlight .bp  { color: #e45649; } /* Name.Builtin.Pseudo */
+[data-theme="light"] .highlight .nc  { color: #c18401; } /* Name.Class */
+[data-theme="light"] .highlight .no  { color: #986801; } /* Name.Constant */
+[data-theme="light"] .highlight .nd  { color: #4078f2; } /* Name.Decorator */
+[data-theme="light"] .highlight .ne  { color: #e45649; } /* Name.Exception */
+[data-theme="light"] .highlight .ni  { color: #1a1a2e; } /* Name.Entity */
+[data-theme="light"] .highlight .nl  { color: #986801; } /* Name.Label */
+[data-theme="light"] .highlight .nn  { color: #c18401; } /* Name.Namespace */
+[data-theme="light"] .highlight .nt  { color: #e45649; } /* Name.Tag */
+[data-theme="light"] .highlight .nv  { color: #986801; } /* Name.Variable */
+[data-theme="light"] .highlight .vc  { color: #986801; } /* Name.Variable.Class */
+[data-theme="light"] .highlight .vg  { color: #986801; } /* Name.Variable.Global */
+[data-theme="light"] .highlight .vi  { color: #986801; } /* Name.Variable.Instance */
+[data-theme="light"] .highlight .vm  { color: #986801; } /* Name.Variable.Magic */
+
+/* Numbers */
+[data-theme="light"] .highlight .m   { color: #986801; } /* Literal.Number */
+[data-theme="light"] .highlight .mi  { color: #986801; } /* Literal.Number.Integer */
+[data-theme="light"] .highlight .mf  { color: #986801; } /* Literal.Number.Float */
+[data-theme="light"] .highlight .mh  { color: #986801; } /* Literal.Number.Hex */
+[data-theme="light"] .highlight .mo  { color: #986801; } /* Literal.Number.Oct */
+[data-theme="light"] .highlight .mb  { color: #986801; } /* Literal.Number.Bin */
+[data-theme="light"] .highlight .il  { color: #986801; } /* Literal.Number.Integer.Long */
+
+/* Operators & Punctuation */
+[data-theme="light"] .highlight .o   { color: #1a1a2e; } /* Operator */
+[data-theme="light"] .highlight .ow  { color: #a626a4; font-weight: bold; } /* Operator.Word */
+[data-theme="light"] .highlight .p   { color: #1a1a2e; } /* Punctuation */
+
+/* Generic */
+[data-theme="light"] .highlight .gd  { color: #e45649; background-color: #ffeef0; } /* Generic.Deleted */
+[data-theme="light"] .highlight .gi  { color: #50a14f; background-color: #e6ffec; } /* Generic.Inserted */
+[data-theme="light"] .highlight .gh  { color: #1a1a2e; font-weight: bold; }         /* Generic.Heading */
+[data-theme="light"] .highlight .gu  { color: #868e96; font-weight: bold; }         /* Generic.Subheading */
+[data-theme="light"] .highlight .ge  { font-style: italic; }                         /* Generic.Emph */
+[data-theme="light"] .highlight .gs  { font-weight: bold; }                          /* Generic.Strong */
+[data-theme="light"] .highlight .gl  { text-decoration: underline; }                 /* Generic.Underline */
+[data-theme="light"] .highlight .go  { color: #868e96; }                             /* Generic.Output */
+[data-theme="light"] .highlight .gp  { color: #868e96; font-weight: bold; }         /* Generic.Prompt */
+[data-theme="light"] .highlight .gt  { color: #e45649; }                             /* Generic.Traceback */
+[data-theme="light"] .highlight .gr  { color: #e45649; }                             /* Generic.Error */
+
+/* Line numbers */
+[data-theme="light"] .highlight .ln  { color: #adb5bd; }
+[data-theme="light"] .highlight .lnt { color: #adb5bd; }
+
+/* --------------------------------------------------------------------------
+   Dark Theme Syntax Highlighting (Dracula-inspired)
+   -------------------------------------------------------------------------- */
+
+[data-theme="dark"] .highlight pre { background: #0f3460; color: #e6e6e6; }
+
+/* Comments */
+[data-theme="dark"] .highlight .c   { color: #6272a4; font-style: italic; }
+[data-theme="dark"] .highlight .cm  { color: #6272a4; font-style: italic; }
+[data-theme="dark"] .highlight .c1  { color: #6272a4; font-style: italic; }
+[data-theme="dark"] .highlight .cs  { color: #6272a4; font-style: italic; }
+[data-theme="dark"] .highlight .cp  { color: #6272a4; font-style: italic; }
+[data-theme="dark"] .highlight .cpf { color: #6272a4; font-style: italic; }
+[data-theme="dark"] .highlight .ch  { color: #6272a4; font-style: italic; }
+
+/* Keywords */
+[data-theme="dark"] .highlight .k   { color: #ff79c6; font-weight: bold; }
+[data-theme="dark"] .highlight .kd  { color: #ff79c6; font-weight: bold; }
+[data-theme="dark"] .highlight .kr  { color: #ff79c6; font-weight: bold; }
+[data-theme="dark"] .highlight .kc  { color: #ff79c6; font-weight: bold; }
+[data-theme="dark"] .highlight .kn  { color: #ff79c6; }
+[data-theme="dark"] .highlight .kt  { color: #8be9fd; }
+[data-theme="dark"] .highlight .kp  { color: #ff79c6; }
+
+/* Strings */
+[data-theme="dark"] .highlight .s   { color: #f1fa8c; }
+[data-theme="dark"] .highlight .s1  { color: #f1fa8c; }
+[data-theme="dark"] .highlight .s2  { color: #f1fa8c; }
+[data-theme="dark"] .highlight .se  { color: #f1fa8c; }
+[data-theme="dark"] .highlight .si  { color: #f1fa8c; }
+[data-theme="dark"] .highlight .sa  { color: #f1fa8c; }
+[data-theme="dark"] .highlight .sb  { color: #f1fa8c; }
+[data-theme="dark"] .highlight .sc  { color: #f1fa8c; }
+[data-theme="dark"] .highlight .sd  { color: #f1fa8c; }
+[data-theme="dark"] .highlight .sh  { color: #f1fa8c; }
+[data-theme="dark"] .highlight .sr  { color: #f1fa8c; }
+[data-theme="dark"] .highlight .ss  { color: #f1fa8c; }
+[data-theme="dark"] .highlight .sx  { color: #f1fa8c; }
+[data-theme="dark"] .highlight .dl  { color: #f1fa8c; }
+
+/* Names */
+[data-theme="dark"] .highlight .n   { color: #e6e6e6; }
+[data-theme="dark"] .highlight .nf  { color: #50fa7b; }
+[data-theme="dark"] .highlight .fm  { color: #50fa7b; }
+[data-theme="dark"] .highlight .na  { color: #50fa7b; }
+[data-theme="dark"] .highlight .nb  { color: #8be9fd; }
+[data-theme="dark"] .highlight .bp  { color: #8be9fd; }
+[data-theme="dark"] .highlight .nc  { color: #8be9fd; }
+[data-theme="dark"] .highlight .no  { color: #bd93f9; }
+[data-theme="dark"] .highlight .nd  { color: #50fa7b; }
+[data-theme="dark"] .highlight .ne  { color: #ff5555; }
+[data-theme="dark"] .highlight .ni  { color: #e6e6e6; }
+[data-theme="dark"] .highlight .nl  { color: #8be9fd; }
+[data-theme="dark"] .highlight .nn  { color: #8be9fd; }
+[data-theme="dark"] .highlight .nt  { color: #ff79c6; }
+[data-theme="dark"] .highlight .nv  { color: #bd93f9; }
+[data-theme="dark"] .highlight .vc  { color: #bd93f9; }
+[data-theme="dark"] .highlight .vg  { color: #bd93f9; }
+[data-theme="dark"] .highlight .vi  { color: #bd93f9; }
+[data-theme="dark"] .highlight .vm  { color: #bd93f9; }
+
+/* Numbers */
+[data-theme="dark"] .highlight .m   { color: #bd93f9; }
+[data-theme="dark"] .highlight .mi  { color: #bd93f9; }
+[data-theme="dark"] .highlight .mf  { color: #bd93f9; }
+[data-theme="dark"] .highlight .mh  { color: #bd93f9; }
+[data-theme="dark"] .highlight .mo  { color: #bd93f9; }
+[data-theme="dark"] .highlight .mb  { color: #bd93f9; }
+[data-theme="dark"] .highlight .il  { color: #bd93f9; }
+
+/* Operators & Punctuation */
+[data-theme="dark"] .highlight .o   { color: #e6e6e6; }
+[data-theme="dark"] .highlight .ow  { color: #ff79c6; font-weight: bold; }
+[data-theme="dark"] .highlight .p   { color: #e6e6e6; }
+
+/* Generic */
+[data-theme="dark"] .highlight .gd  { color: #ff5555; background-color: #3d1f1f; }
+[data-theme="dark"] .highlight .gi  { color: #50fa7b; background-color: #1f3d24; }
+[data-theme="dark"] .highlight .gh  { color: #e6e6e6; font-weight: bold; }
+[data-theme="dark"] .highlight .gu  { color: #6272a4; font-weight: bold; }
+[data-theme="dark"] .highlight .ge  { font-style: italic; }
+[data-theme="dark"] .highlight .gs  { font-weight: bold; }
+[data-theme="dark"] .highlight .gl  { text-decoration: underline; }
+[data-theme="dark"] .highlight .go  { color: #6272a4; }
+[data-theme="dark"] .highlight .gp  { color: #6272a4; font-weight: bold; }
+[data-theme="dark"] .highlight .gt  { color: #ff5555; }
+[data-theme="dark"] .highlight .gr  { color: #ff5555; }
+
+/* Line numbers */
+[data-theme="dark"] .highlight .ln  { color: #4a5568; }
+[data-theme="dark"] .highlight .lnt { color: #4a5568; }

@@ -1,0 +1,12 @@
+name = "Momo"
+license = "MIT"
+licenselink = "https://github.com/yourusername/momo/blob/main/LICENSE"
+description = "A minimal, clean Hugo theme for tech blogs"
+homepage = "https://github.com/yourusername/momo"
+tags = ["blog", "minimal", "dark-mode", "syntax-highlighting", "responsive"]
+features = ["blog", "dark-mode", "syntax-highlighting", "responsive", "shortcodes"]
+min_version = "0.110.0"
+
+[author]
+  name = "Your Name"
+  homepage = "https://example.com"
