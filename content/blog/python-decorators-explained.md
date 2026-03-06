@@ -4,7 +4,7 @@ date: 2025-02-10
 description: "Understanding Python decorators with practical examples"
 tags: ["python", "programming", "advanced"]
 categories: ["tutorials"]
-draft: false
+draft: true
 ---
 
 Decorators are one of Python's most powerful features. They allow you to modify the behavior of functions or classes without changing their source code.

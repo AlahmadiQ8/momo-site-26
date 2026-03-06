@@ -4,7 +4,7 @@ date: 2025-03-01
 description: "A practical introduction to Docker containers for developers"
 tags: ["docker", "devops", "containers"]
 categories: ["devops"]
-draft: false
+draft: true
 ---
 
 Docker has revolutionized how we build, ship, and run applications. Let's dive into the fundamentals.

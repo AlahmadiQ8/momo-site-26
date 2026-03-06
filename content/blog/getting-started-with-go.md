@@ -4,7 +4,7 @@ date: 2025-01-15
 description: "A beginner's guide to the Go programming language"
 tags: ["go", "programming", "tutorial"]
 categories: ["tutorials"]
-draft: false
+draft: true
 ---
 
 Go (or Golang) is a statically typed, compiled programming language designed at Google. It's known for its simplicity, efficiency, and excellent support for concurrent programming.

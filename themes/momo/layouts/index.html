@@ -23,10 +23,12 @@
   </div>
 </section>
 
+{{ $posts := first 5 (where .Site.RegularPages "Section" "blog") }}
+{{ with $posts }}
 <section class="recent-posts">
   <h2>Recent Posts</h2>
   <div class="post-list">
-    {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+    {{ range . }}
     <article class="post-list-item">
       <h3 class="post-list-title">
         <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -43,4 +45,5 @@
     {{ end }}
   </div>
 </section>
+{{ end }}
 {{ end }}
