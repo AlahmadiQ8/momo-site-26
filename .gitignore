@@ -1,3 +1,4 @@
+.env
 skills-lock.json
 .claude
 *.test
@@ -8,3 +9,4 @@ public/
 cache/filecache/_gen/
 node_modules
 .playwright*
+copilot-*
