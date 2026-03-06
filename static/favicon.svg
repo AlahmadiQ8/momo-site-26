@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .bg { fill: #0d1117; }
+    .glow { fill: #58a6ff; opacity: 0.08; }
+    .prompt { stroke: #58a6ff; fill: none; }
+    .dot-r { fill: #ff6b6b; }
+    .dot-y { fill: #fcc419; }
+    .dot-g { fill: #51cf66; }
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #0066cc; }
+      .glow { fill: #ffffff; opacity: 0.06; }
+      .prompt { stroke: #ffffff; }
+      .dot-r { fill: rgba(255,255,255,0.5); }
+      .dot-y { fill: rgba(255,255,255,0.65); }
+      .dot-g { fill: rgba(255,255,255,0.8); }
+    }
+  </style>
+  <!-- Background -->
+  <rect class="bg" width="32" height="32" rx="7"/>
+  <!-- Subtle inner glow -->
+  <rect class="glow" x="1" y="1" width="30" height="30" rx="6"/>
+  <!-- Window dots -->
+  <circle class="dot-r" cx="6.5" cy="5.5" r="1.4"/>
+  <circle class="dot-y" cx="11" cy="5.5" r="1.4"/>
+  <circle class="dot-g" cx="15.5" cy="5.5" r="1.4"/>
+  <!-- Prompt chevron > -->
+  <path class="prompt" d="M7 13 L14 19 L7 25" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Cursor _ -->
+  <line class="prompt" x1="17" y1="25" x2="25" y2="25" stroke-width="2.8" stroke-linecap="round"/>
+</svg>
