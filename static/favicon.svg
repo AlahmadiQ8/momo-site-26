@@ -1,30 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <style>
-    .bg { fill: #0d1117; }
-    .glow { fill: #58a6ff; opacity: 0.08; }
-    .prompt { stroke: #58a6ff; fill: none; }
-    .dot-r { fill: #ff6b6b; }
-    .dot-y { fill: #fcc419; }
-    .dot-g { fill: #51cf66; }
-    @media (prefers-color-scheme: light) {
-      .bg { fill: #0066cc; }
-      .glow { fill: #ffffff; opacity: 0.06; }
-      .prompt { stroke: #ffffff; }
-      .dot-r { fill: rgba(255,255,255,0.5); }
-      .dot-y { fill: rgba(255,255,255,0.65); }
-      .dot-g { fill: rgba(255,255,255,0.8); }
-    }
-  </style>
+  <defs>
+    <clipPath id="clip"><rect width="32" height="32" rx="7"/></clipPath>
+  </defs>
   <!-- Background -->
-  <rect class="bg" width="32" height="32" rx="7"/>
-  <!-- Subtle inner glow -->
-  <rect class="glow" x="1" y="1" width="30" height="30" rx="6"/>
+  <rect fill="#0d1117" width="32" height="32" rx="7"/>
+  <g clip-path="url(#clip)">
+    <!-- Kuwait flag stripe (right side) -->
+    <rect fill="#007A3D" x="28.5" y="0" width="3.5" height="10.67"/>
+    <rect fill="#FFFFFF" x="28.5" y="10.67" width="3.5" height="10.67"/>
+    <rect fill="#CE1126" x="28.5" y="21.33" width="3.5" height="10.67"/>
+  </g>
   <!-- Window dots -->
-  <circle class="dot-r" cx="6.5" cy="5.5" r="1.4"/>
-  <circle class="dot-y" cx="11" cy="5.5" r="1.4"/>
-  <circle class="dot-g" cx="15.5" cy="5.5" r="1.4"/>
-  <!-- Prompt chevron > -->
-  <path class="prompt" d="M7 13 L14 19 L7 25" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Cursor _ -->
-  <line class="prompt" x1="17" y1="25" x2="25" y2="25" stroke-width="2.8" stroke-linecap="round"/>
+  <circle fill="#007A3D" cx="6.5" cy="5.5" r="1.2" opacity="0.6"/>
+  <circle fill="#FFFFFF" cx="11" cy="5.5" r="1.2" opacity="0.4"/>
+  <circle fill="#CE1126" cx="15.5" cy="5.5" r="1.2" opacity="0.6"/>
+  <!-- Prompt chevron -->
+  <path d="M7 13 L14 19 L7 25" stroke="#58a6ff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Cursor -->
+  <line x1="17" y1="25" x2="25" y2="25" stroke="#58a6ff" stroke-width="2.6" stroke-linecap="round"/>
 </svg>
