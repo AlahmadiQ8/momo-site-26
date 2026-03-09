@@ -29,7 +29,13 @@ theme = "momo"
 [params]
   author = "Mohammad Alahmadi"
   description = "A tech blog about programming and software development"
-  bio = """Hi. I'm a data and ai tech nerd from Kuwait. Outside of tech, I love board games, video games, weightlifting."""
+  bio = """
+  Hi. I'm a data and ai tech nerd from Kuwait. Outside of tech, I love board games, video games, weightlifting.
+
+  In the age of overly AI-generated content, I try to keep this site as authentic as possible. 
+
+  You can find my old posts at my [graveyard site](https://alahmadiq8.github.io/archive/).
+  """ 
   profileImage = "/images/photo.jpg"
   [params.social]
     github = "https://github.com/alahmadiq8"

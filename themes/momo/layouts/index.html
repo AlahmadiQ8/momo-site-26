@@ -5,7 +5,7 @@
   </div>
   <div class="profile-info">
     <h1>{{ .Site.Params.author | default "Hello, I'm a Developer" }}</h1>
-    <p>{{ .Site.Params.bio | default "Welcome to my tech blog." }}</p>
+    {{ .Site.Params.bio | default "Welcome to my tech blog." | markdownify }}
     <div class="social-links">
       {{ with .Site.Params.social.github }}
         <a href="{{ . }}" target="_blank" rel="noopener" title="GitHub">GitHub</a>
